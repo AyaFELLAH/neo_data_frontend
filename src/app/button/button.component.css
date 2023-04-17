@@ -1,0 +1,18 @@
+.btn {
+    width: 10em;
+    height: 3em;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #13398b;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #1e56a0;
+}

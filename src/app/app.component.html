@@ -1,0 +1,7 @@
+<section>
+    <p class="p1">Aucun client est déclaré</p>
+    <app-button [showAddClient]="showAddClient" (toggle)="showAddClient = $event">Créer un client</app-button>
+    <app-client></app-client> 
+    <!-- <app-add-client [showAddClient]="showAddClient" *ngIf="showAddClient"></app-add-client>  -->
+    <!-- <div class="overlay hidden"></div> -->
+</section>

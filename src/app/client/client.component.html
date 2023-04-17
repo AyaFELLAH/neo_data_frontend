@@ -1,0 +1,30 @@
+<ul>
+    <li *ngFor="let client of clientService.clients"> 
+<div class="client">
+    <div class="company-nom-siren-container">
+        <div><img class="img" src="./assets/images/company.svg" alt="enterprise_icon"></div>
+        <div class="nom-siren-container">
+            <p class="nom">{{ client.nom }}</p>
+            <p class="siren">{{ client.siren }}</p>
+        </div>
+    </div>
+    <div class="email-container">
+        <img class="icon" src="./assets/images/email.svg" alt="email">
+        <p class="email">{{ client.email}}</p>
+    </div>
+    <div class="phone-container">
+        <img class="icon" src="./assets/images/phone.svg" alt="phone">
+        <p class="email">{{client.telephonePortable}}</p>
+    </div>
+    <div class="euro">
+        <p class="nombre-facture">0 facture</p>
+        <p class="money">0,00 €</p>
+    </div>
+    <div class="buttons-container">
+        <button class="btn btn-1" >Modifier</button>
+        <button class="btn btn-2" (click)="supprimerClient(client)">Supprimer</button>
+    </div>
+</div>
+
+</li>
+</ul>

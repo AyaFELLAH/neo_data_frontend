@@ -1,0 +1,70 @@
+<div class="modal">
+    <button class="close-button">&times;</button>
+    <p class="p1">Ajouter un client</p>
+    <div class="container">
+        <div class="first-container">
+            <div class="Informations-container">
+                <p class="p2">Informations</p>
+                <p class="p3">Type de contact</p>
+                <select class="select" name="type" id="type">
+                    <option disabled selected style="display:none;">Votre choix</option>
+                    <option value="entreprise">Entreprise</option>
+                    <option value="particulier">Particulier</option>
+                </select>
+                <p class="p3">Nom de l'entreprise ou Nom et Prenom</p>
+                <input type="text">
+                <p class="p3 optional hidden">SIREN</p>
+                <input class="optional hidden" type="text">
+                <p class="p3 optional hidden">N° de TVA intracommunautaire</p>
+                <input class="optional hidden" type="text">
+            </div>
+            <div class="contact-container">
+                <p class="p2">Contact</p>
+                <p class="p3">Email</p>
+                <input type="text">
+                <div class="telephone-container">
+                    <div class="telephone-1">
+                        <p class="p3">Téléphone (bureau)</p>
+                        <input type="text">
+                    </div>
+                    <div class="telephone-2">
+                        <p class="p3">Téléphone (mobile)</p>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-container">
+            <p class="p2">Adresse</p>
+            <p class="p3">Intitulé</p>
+            <input type="text">
+            <p class="p3">N° de rue</p>
+            <input class="no-margin-bottom" type="text">
+            <input class="no-margin" type="text" placeholder="Complément d'adresse">
+            <input class="no-margin-top" type="text" placeholder="Complément d'adresse">
+            <div class="code-postal-container">
+                <div class="code-postal">
+                    <p class="p3">Code postal</p>
+                    <input type="text">
+                </div>
+                <div class="ville">
+                    <p class="p3">Ville</p>
+                    <input type="text">
+                </div>
+            </div>
+            <p class="p3">pays</p>
+            <select class="select" name="pays" id="pays">
+                <option selected value="france">France</option>
+                <option value="maroc">Maroc</option>
+                <option value="belgique">Belgique</option>
+                <option value="suisse">Suisse</option>
+                <option value="pays-bas">Pays-Bas</option>
+                <option value="portugal">Portugal</option>
+            </select>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="btn btn-annuler">Annuler</button>
+        <button class="btn btn-enregistrer">Entregistrer</button>
+    </div>
+</div>
